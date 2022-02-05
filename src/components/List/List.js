@@ -53,8 +53,8 @@ const List = () => {
   //     setColumns(columnsUpdated);
   // }
   const columns = useSelector(state => state.columns)
-  console.log(columns);
-
+  // console.log(columns);
+  // console.log(cards);
   return (
     <div className={styles.list}>
       <header className={styles.header}>
