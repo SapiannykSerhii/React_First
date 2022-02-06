@@ -3,6 +3,7 @@ import TextInput from '../TextInput/Textinput';
 import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { updateSearchString } from '../../Redux/store';
 
 const SearchForm = () => {
   
@@ -11,7 +12,7 @@ const SearchForm = () => {
 
   const hundleSubmit = e => {
     e.preventDefault()
-    dispatch({type: 'UPDATE_SEARCHSTRING', payload:{searchString} })
+    dispatch(updateSearchString({searchString}))
     setSearchString('');
   }
   
