@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { addColumn } from '../../Redux/store';
 
 
-const ColumnForm = props => {
+const ColumnForm = props=> {
   // console.log(props);
   const dispatch = useDispatch();
 
