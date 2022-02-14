@@ -1,5 +1,5 @@
 import { createStore, combineReducers } from 'redux';
-import initialState from './initialState';
+import initialState from './initialState.js';
 import listsReducer from './listRedux';
 import columnsReducer from './columnRedux';
 import cardsReducer from './cardRedux';
@@ -8,6 +8,7 @@ import searchStringReducer from './searchStringRedux';
 //   if(action.type === 'ADD_COLUMN') return {...state, columns: [...state.columns, {...action.newColumn, id: shortid()} ]}
 //   return state;
 // }
+
 
 const subreducers = {
 

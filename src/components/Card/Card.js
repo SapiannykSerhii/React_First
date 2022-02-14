@@ -12,6 +12,8 @@ const Card = props => {
     e.preventDefault();
     dispatch( getToggleCardFavorite ( cardId ))
   }
+
+
   const card = useSelector(state => state.cards.filter(card => card.id === cardId))
   // console.log(card);
   const isFavorite = card[0].isFavorite

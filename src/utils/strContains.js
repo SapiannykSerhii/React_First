@@ -5,4 +5,4 @@ const strContains = (firstStr, secondSrt) => {
       return false;
 }
 
-export default strContains
+export default strContains 
